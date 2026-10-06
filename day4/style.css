@@ -1,0 +1,61 @@
+:root {
+    --background-color: #ffffff;
+    --text-color: #222222;
+    --input-background: #ffffff;
+    --border-color: #cccccc;
+    --button-background: #eeeeee;
+    --button-text: #222222;
+}
+
+body.dark {
+    --background-color: #222222;
+    --text-color: #ffffff;
+    --input-background: #333333;
+    --border-color: #666666;
+    --button-background: #444444;
+    --button-text: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 30px;
+}
+
+main {
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+textarea {
+    display: block;
+    width: 100%;
+    min-height: 200px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: var(--input-background);
+    color: var(--text-color);
+    border: 1px solid var(--border-color);
+}
+
+button {
+    margin-right: 10px;
+    padding: 8px 14px;
+    background-color: var(--button-background);
+    color: var(--button-text);
+    border: 1px solid var(--border-color);
+    cursor: pointer;
+}
+
+.warning {
+    color: orange;
+}
+
+.over {
+    color: red;
+    font-weight: bold;
+}
